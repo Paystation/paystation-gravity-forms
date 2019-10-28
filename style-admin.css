@@ -1,0 +1,31 @@
+/* styles for Gravity Forms Paystation (3 party hosted) admin pages */
+
+#icon-edit.icon32-posts-paystation_feed,
+#icon-gf_edit_forms {
+	background: transparent url(images/paystation-32.png) no-repeat;
+}
+
+.postbox-container td.mceIframeContainer {
+	background-color: #fff;
+}
+
+.gfpaystation-details {
+	width: 97%;
+}
+
+.gfpaystation-details th {
+	text-align: right;
+	width: 14em;
+}
+
+#meta_gfpaystation_feed_urls label {
+	font-weight: bold;
+}
+
+.gfpaystation-opt-admin-test {
+	color: #c00;
+}
+
+.no-js .gfpaystation-opt-admin-test {
+	display: none;
+}
