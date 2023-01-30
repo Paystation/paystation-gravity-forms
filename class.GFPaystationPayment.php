@@ -252,7 +252,7 @@ class GFPaystationPaymentResponse {
 
 
 			// If the error code is zero then there was no error, the transaction was sucessful.
-			if ($xml->ec === 0) {
+			if ($xml->ec === '0') {
 				$this->success = true;
 			}
 			else {
@@ -265,7 +265,7 @@ class GFPaystationPaymentResponse {
 			// ----------------------------------
 			// Now set the other properies of this class to the xml items.
 			// We really only use the transactionId and the error message in the plugin.
-			$this->errorCode = (int) $xml->ec;
+			$this->errorCode = $xml->ec;
 			$this->errorMessage = $xml->em;
 			$this->transactionId = $xml->ti;
 			$this->cardType = $xml->ct;

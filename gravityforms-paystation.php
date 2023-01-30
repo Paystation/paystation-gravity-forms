@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms Paystation (3 party hosted)
 Plugin URI: https://wordpress.org/plugins/gravity-forms-paystation-3-party-hosted/
 Description: Integrates Gravity Forms with the Paystation 3 party payment gateway allowing end users to purchase goods and services, or make donations, via Gravity Forms.
-Version: 1.5.0
+Version: 1.5.5
 Author: Paystation Limited
 Author URI: https://www2.paystation.co.nz/
 License: GPL2
@@ -30,7 +30,7 @@ if (!defined('GFPAYSTATION_PLUGIN_ROOT')) {
 	define('GFPAYSTATION_PLUGIN_OPTIONS', 'gfpaystation_plugin');
 
 	// ****** REMEMBER TO UPDATE THIS TOO *******
-	define('GFPAYSTATION_PLUGIN_VERSION', '1.4.3');
+	define('GFPAYSTATION_PLUGIN_VERSION', '1.5.5');
 
 	// Custom post types
 	define('GFPAYSTATION_TYPE_FEED', 'gfpaystation_feed');

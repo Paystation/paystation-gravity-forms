@@ -455,7 +455,7 @@ class GFPaystationPlugin {
 
 						// If failed then redirect the user to the failure URL, otherwise let the gravity form normal submit happen
 						// and take the user to wherever the gravity form is supposed to go on success.
-						if ($resultReq->errorCode != 0) {
+						if ($resultReq->errorCode != '0') {
 
 							$feed = $this->getFeed($form['id']);
 
@@ -517,7 +517,7 @@ class GFPaystationPlugin {
 							// Check to see if the payment was successful
 							// Because this time it is from the postback we know 100% for sure that the payment was successul or not
 							// so we must update the status of the lead to sucess or failure and also send any responses.
-							if ($resultReq->errorCode === 0) {
+							if ($resultReq->errorCode === '0') {
 
 								// Success (i.e. error code is 0). Update some details on the lead.
 								$lead['payment_status'] = 'Approved';

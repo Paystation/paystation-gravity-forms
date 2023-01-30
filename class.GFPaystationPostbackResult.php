@@ -77,7 +77,7 @@ class GFPaystationPostbackResult {
 				// ----------------------------------
 				// Now set the properies of this class to the xml items.
 				// We need to cast the items to the correct datatypes otherwise code using these later on can error or warn because the item is a simple XML element.
-				$this->errorCode = (int) $xml->ec;
+				$this->errorCode = (string) $xml->ec;
 				$this->errorMessage = (string) $xml->em;
 				$this->transactionId = (string) $xml->ti;
 				$this->cardType = (string) $xml->ct;
