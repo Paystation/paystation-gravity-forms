@@ -175,6 +175,9 @@ class GFPaystationFormData {
 				}
 			}
 
+			// Convert $price and $qty to integers before multiplying
+			$price = intval($price);
+			$qty = intval($qty);
 			$price *= $qty;
 		}
 
