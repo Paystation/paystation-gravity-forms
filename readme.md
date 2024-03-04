@@ -1,33 +1,43 @@
-# Gravity Forms Paystation
+# Gravity Forms Paystation 1.5.5 (latest version)
 
-Integrates Gravity Forms with the Paystation 3 party hosted payment gateway allowing end-users to purchase goods and services via Gravity Forms.
+Integrates Gravity Forms with the Paystation 3 party hosted payment gateway, enabling end-users to purchase goods and services seamlessly via Gravity Forms.
 
 ## Description
 
-Gravity Forms Paystation (3 party hosted) adds a 3 party hosted credit card payment gateway for [Paystation](https://www2.paystation.co.nz) to the [Gravity Forms](http://www.gravityforms.com/) plugin.
+Gravity Forms Paystation (3 party hosted) adds a 3 party hosted credit card payment gateway for Paystation to the Gravity Forms plugin.
 
-With this plugin you can use Gravity Forms to create various types of payment forms...
+With this plugin you can use Gravity Forms 2.8 to create various types of payment forms...
 
 * Product forms
 * Online Booking forms
 * Donation forms
 * Service payment forms
 
-NOTE: this plugin requires [Gravity Forms](http://www.gravityforms.com/); so you need to have installed and activated Gravity Forms.
+NOTE: this plugin requires [Gravity Forms 2.8 or latest version, check here](https://www.gravityforms.com/); so you need to have installed and activated Gravity Forms.
+and also **previous versions of Gravity forms won't be recommended with this plugin as you can expect the compatibility issues.**
 
 ## Requirements:
 
 * The [Gravity Forms](http://www.gravityforms.com/) plugin, any licence (Personal, Business, Developer).
-* An account with [Paystation](https://www2.paystation.co.nz/).
+* [Install](https://wordpress.org/plugins/gravity-forms-paystation-3-party-hosted/) the Gravity forms Paystation (3 party hosted plugin). 
+* After installing activate your account with [Paystation](https://www2.paystation.co.nz/).
 
-## Installation
+## Installation steps:
 
 1. Install the [Gravity Forms](http://www.gravityforms.com/) plugin.
 2. Activate the Gravity forms plugin, and set settings as desired (refer to gravity forms documentation if needed).
-3. Upload the Gravity Forms Paystation (3 party hosted) plugin to your /wp-content/plugins/ directory.
+3. Upload the Gravity Forms Paystation (3 party hosted) plugin to your /wp-content/plugins/ directory
 4. Activate Gravity Forms Paystation (3 party hosted) via Plugins menu in WordPress.
 
-## Using Gravity Forms Paystation
+### Create a gravity form:
+
+1. To create a gravity form, go to the admin dashboard, see the gravity form plugin which you have installed, and click add new form.
+2. Create your form according to your requirements, please make sure that you should include the form field from the payment details tab to ensure that the our plugin is working correctly. 
+3. Select your form from the dropdown at the top of the page and click save.
+4. If you want custom field mappings to Paystation data, you can map your form fields to Paystation transaction fields (Merchant Reference, Customer details, Order details), be aware
+   a form field can only be mapped to one Paystation transaction field at a time.
+
+## Using Gravity Forms Paystation:
 
 Before you can use the plugin to make payments, you need to create an account with Paystation.
 To do this please see visit the [Paystation](https://www2.paystation.co.nz/) website.
@@ -35,22 +45,20 @@ To do this please see visit the [Paystation](https://www2.paystation.co.nz/) web
 Then you will need to enter some information in the plugin settings
 
 1. Select 'Plugins' from the WordPress Admin menu.
-2. Click the 'Settings' link for the Gravity Forms Paystation (3 party hosted) plugin.
-3. Enter your Paystation Id in the Paystation Id field.
-4. Enter your Paystation Gateway Id in to the Paystation Gateway Id field.
-5. Enter a string of letters and numbers for the Security Hash (8 to 20 characters is fine).
-6. Save the settings by clicking the 'Save Settings' button.
-7. Email info@paystation.co.nz letting us know the following: that you are using the Paystation Gravity forms plugin, the url to your wordpress site, and what your Security Hash is.
+2. Select the Gravity Forms plugin, the 3 party setting will be under the gravity forms plugin.
+3. And then choose the Paystation (3 party hosted).
+4. Enter your Paystation Id in the Paystation Id field, Gateway ID in the gateway Id field. 
+5. Enter a string of letters and numbers for the Security Hash (8 to 20 characters is fine). 
+6. Then choose 'No' in the test mode field. 
+7. Save the settings by clicking the 'Save Settings' button. 
+8. And then under the same setting click on setup Paystation feed, it will redirect to the feeds page.
+9. On the feeds settings page, select thye form name from the dropdown which yoy have created 
+10. Email [info@paystation.co.nz](mailto:info@paystation.co.nz) letting us know the following: that you are using the Paystation Gravity forms plugin, the url to your wordpress site, and what your Security Hash is.
 
-### Building a Gravity Form with Credit Card Payments
+## Testing dev environment:
 
-1. Create a new Gravity form
-1. Add one or more Product fields or a Total field to your form. The plugin will automatically detect the values assigned to these pricing fields
-3. Return to Paystation (3 party) menu where you setup your Paystation settings above and click 'Setup Paystation Feed'
-4. Click 'Add New' feed at the top of the page
-5. Select your form from the dropdown at the top of the page and save
-6. If you want custom field mappings to Paystation data, you can map your form fields to Paystation transaction fields (Merchant Reference, Customer details, Order details), be aware
-   a form field can only be mapped to one Paystation transaction field at a time.
+Tested successfully with the latest WordPress 6.4 version, PHP 8.2 version, Gravity forms 2.8 version
+Please note: This plugion is compatbile with the latest version as mentioned above, any downgrade versions will occure an issue and this might break your website.
 
 ## Frequently Asked Questions
 
@@ -89,5 +97,9 @@ Use your Gravity Forms Settings page to select the currency type to pass to Pays
 
 The plugin will run in shared hosting environments, but requires PHP 5 with the following module enabled (talk to your host).
 This is typically available because is is enabled by default in PHP 5, but may be disabled on some shared hosts.
+
+### Can I use this plugin with the older versions of WordPress or PHP or Gravity forms ?
+
+Absoultely, NO you cannot use any of the older versions with this otherwise expect an unexpected behavior.
 
 * SimpleXML
