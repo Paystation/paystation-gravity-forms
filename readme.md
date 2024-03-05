@@ -34,7 +34,7 @@ and also **previous versions of Gravity forms won't be recommended with this plu
 1. To create a gravity form, go to the admin dashboard, see the gravity form plugin which you have installed, and click add new form.
 2. Create your form according to your requirements, please make sure that you should include the form field from the payment details tab to ensure that the our plugin is working correctly. 
 3. Select your form from the dropdown at the top of the page and click save.
-4. If you want custom field mappings to Paystation data, you can map your form fields to Paystation transaction fields (Merchant Reference, Customer details, Order details), be aware
+4. If you want custom field mappings to Paystation data, you can map your form fields to Paystation transaction fields (Merchant Reference, Customer details, Order details); be aware
    a form field can only be mapped to one Paystation transaction field at a time.
 
 ## Using Gravity Forms Paystation:
