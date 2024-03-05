@@ -58,7 +58,7 @@ Then you will need to enter some information in the plugin settings
 ## Testing dev environment:
 
 Tested successfully with the latest WordPress 6.4 version, PHP 8.2 version, Gravity forms 2.8 version
-Please note: This plugion is compatbile with the latest version as mentioned above, any downgrade versions will occure an issue and this might break your website.
+Please note: This plugin is compatible with the latest version as mentioned above, any downgrade versions may introduce an issue and this might break your website.
 
 ## Frequently Asked Questions
 
